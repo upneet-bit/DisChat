@@ -28,7 +28,7 @@ const Auth = () => {
         e.preventDefault();
 
         const { username, password, phonenumber, avatarURL} = form;
-        const URL = "https://dis-chat.vercel.app/auth" || "http://localhost:5000/auth ";
+        const URL = "https://dis-chat.vercel.app/auth" || "http://localhost:5000/auth";
 
         const { data : {token, userId, hashedPassword, fullName } } = await axios.post(`${URL}/${isSignup ? 'signup' : 'login' }`, {
             fullName:form.fullName, password, username, phonenumber, avatarURL
