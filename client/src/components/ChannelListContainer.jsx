@@ -29,7 +29,7 @@ const CompanyHeader = () => {
     return(
         <div className="channel-list__header">
             <p className="channel-list__header__text">
-                Dis-Chat
+                DisChat
             </p>
         </div>
     )
